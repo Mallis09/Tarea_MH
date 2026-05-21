@@ -1,0 +1,197 @@
+:root {
+  --rosa-principal: #ff85a1; /* Rosa vibrante pero suave */
+  --rosa-claro: #fbb1bd;
+  --fondo: #fceef5; /* Rosa casi blanco */
+  --texto: #5a3d4c; /* Gris purpúreo para legibilidad */
+  --blanco: #ffffff;
+  --acento: #c18fff; /* Lila para botones */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Tipografía más moderna */
+  background: linear-gradient(135deg, var(--fondo) 0%, #e0c3fc 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--texto);
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-top: 100px;
+  color: var(--texto);
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+form {
+  width: 90%;
+  max-width: 450px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* Efecto borroso moderno */
+  display: flex;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+form input[type="text"] {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--rosa-claro);
+  padding: 10px;
+  font-size: 1.1em;
+  color: var(--texto);
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid var(--rosa-principal);
+}
+
+form input[type="submit"] {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(45deg, var(--rosa-principal), var(--acento));
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+.lista {
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.tareas {
+  background-color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+
+.tareas:hover {
+  transform: translateY(-3px);
+}
+
+/* Estilo para el checkbox personalizado */
+input[type="checkbox"] {
+  accent-color: var(--rosa-principal);
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.borrar {
+  color: #ffb3b3;
+  transition: color 0.3s;
+}
+
+.borrar:hover {
+  color: #ff4d4d;
+  cursor: pointer;
+}
+
+#estadistica {
+  margin: 30px auto;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 30px;
+  font-size: 0.9em;
+  color: var(--rosa-principal);
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer con estilo */
+footer {
+  margin-top: auto;
+  padding: 30px;
+  background: transparent;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.footer-content nav a {
+  color: var(--rosa-principal);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+/* --- Estilo del Logo Personal --- */
+.logo-personal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-personal:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.logo-personal .m {
+    color: var(--rosa-principal);
+    text-shadow: 2px 2px 0px var(--blanco);
+    margin-right: -12px; /* Hace que las letras se unan */
+    z-index: 2;
+}
+
+.logo-personal .h {
+    color: var(--acento);
+    opacity: 0.7;
+    font-weight: 300; /* Una más gruesa y otra más fina para contraste */
+    z-index: 1;
+}
+
+/* Decoración extra: un pequeño destello */
+.logo-personal::after {
+    content: '✨';
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
