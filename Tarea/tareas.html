@@ -3,17 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Maricela Hernandez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Tareas</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="./tareas.css">
+  <link rel="stylesheet" href="tareas.css">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
- <div class="logo-personal">
-  <span class="m">M</span><span class="h">H</span>
-</div>
+  <header class="logo-personal">
+    <span class="m">M</span><span class="h">H</span>
+  </header>
+
   <h1>Lista de Tareas</h1>
 
   <form action="#" id="usuario">
@@ -27,6 +33,7 @@
         <input type="checkbox">
         Tarea 1
       </label>
+
       <i class="fa-solid fa-trash borrar"></i>
     </article>
   </section>
@@ -35,21 +42,17 @@
     Tareas pendientes: 0 Completadas: 0
   </section>
 
-  <script src="tarea.js"></script>
   <footer>
-    <div class="footer-content">
-        <p>&copy; 2026 Maricela Hernandez - Todos los derechos reservados</p>
-        <nav>
-            <a href="#proyectos">Proyectos</a> | 
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
-</footer>
-<head>
-  <!-- Añade esta línea antes de tus CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-  <!-- ... resto de tus links ... -->
-</head>
+    <p>&copy; 2026 Maricela Hernandez - Todos los derechos reservados</p>
+
+    <nav>
+      <a href="#proyectos">Proyectos</a> |
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </footer>
+
+  <script src="tarea.js"></script>
+
 </body>
 
 </html>
